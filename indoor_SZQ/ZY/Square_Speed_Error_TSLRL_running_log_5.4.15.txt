@@ -1,0 +1,11 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-5-4  15:22:23 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 2.704402 秒。
+时间已过 2.816475 秒。
+时间已过 2.676544 秒。
+         Repeat Time: 1 || Speed: 1 || Algorithm: TSLRL || Finished at: 2015-5-4  15:22:32
+------------> Speed: 1 || Algorithm: TSLRL ||  Finished at: 2015-5-4  15:22:32
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL || Scenario: Square_Speed_Error || Used Time: 8.2338s || Finished at  2015-5-4  15:22:32 <<<<<<<<<<

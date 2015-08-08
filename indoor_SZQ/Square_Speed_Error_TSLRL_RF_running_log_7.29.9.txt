@@ -1,0 +1,54 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  9:48:5 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 3.778214 秒。
+时间已过 4.221297 秒。
+时间已过 3.005826 秒。
+时间已过 4.278747 秒。
+时间已过 4.517847 秒。
+时间已过 3.222183 秒。
+时间已过 4.574978 秒。
+时间已过 4.630999 秒。
+时间已过 6.021744 秒。
+时间已过 4.542820 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  9:49:11
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  9:49:11
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 66.3314s || Finished at  2015-7-29  9:49:11 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  9:57:35 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 4.519001 秒。
+时间已过 3.332551 秒。
+时间已过 2.890127 秒。
+时间已过 5.553068 秒。
+时间已过 4.691821 秒。
+时间已过 3.019356 秒。
+时间已过 4.637275 秒。
+时间已过 4.492669 秒。
+时间已过 5.175639 秒。
+时间已过 5.645629 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  9:58:42
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  9:58:42
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 67.41s || Finished at  2015-7-29  9:58:42 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  9:59:54 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 2.414136 秒。
+时间已过 2.962513 秒。
+时间已过 3.268277 秒。
+时间已过 3.744781 秒。
+时间已过 4.456197 秒。
+时间已过 4.766238 秒。
+时间已过 4.650424 秒。
+时间已过 4.813981 秒。
+时间已过 9.796018 秒。
+时间已过 3.914805 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  10:1:3
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  10:1:3
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 68.4711s || Finished at  2015-7-29  10:1:3 <<<<<<<<<<

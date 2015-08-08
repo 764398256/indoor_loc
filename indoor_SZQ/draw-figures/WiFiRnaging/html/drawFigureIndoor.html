@@ -1,0 +1,375 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>drawFigureIndoor</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-07-10"><meta name="DC.source" content="drawFigureIndoor.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">set figure</a></li><li><a href="#3">call discoDrawFigure draw figure</a></li><li><a href="#4">draw figure compare different localization scheme</a></li></ul></div><pre class="codeinput">close <span class="string">all</span>
+
+<span class="comment">% %% load data</span>
+<span class="comment">% load('Square_Speed_Error_Radar_distError_ALL.mat')</span>
+<span class="comment">% load('Square_Speed_Error_PLWLS_distError_ALL.mat')</span>
+<span class="comment">% load('Square_Speed_Error_Horus_distError_ALL.mat')</span>
+<span class="comment">% load('Square_Speed_Error_Indoor_WifiRPCAVA_distError_ALL.mat')</span>
+<span class="comment">% load('Square_Speed_Error_Centaur_distError_ALL.mat')</span>
+<span class="comment">% error_Indoor_WifiRPCAVA = error_Indoor;</span>
+<span class="comment">% load('Square_Speed_Error_Indoor_WifiLR_distError_ALL.mat')</span>
+<span class="comment">% error_Indoor_WifiLR_ALL = error_Indoor;</span>
+<span class="comment">% load('Square_Speed_Error_Indoor_WifiRPCA_distError_ALL.mat')</span>
+<span class="comment">% error_Indoor_WifiRPCA = error_Indoor;</span>
+<span class="comment">% load('Square_Speed_Error_TSLRL_RF_ALL.mat')</span>
+<span class="comment">% load data</span>
+load(<span class="string">'Square_Speed_Error_Radar_ALL.mat'</span>)
+load(<span class="string">'Square_Speed_Error_PLWLS_ALL.mat'</span>)
+load(<span class="string">'Square_Speed_Error_Horus_ALL.mat'</span>)
+load(<span class="string">'Square_Speed_Error_Indoor_WifiRPCAVA_ALL.mat'</span>)
+load(<span class="string">'Square_Speed_Error_Centaur_ALL.mat'</span>)
+error_Indoor_WifiRPCAVA = error_Indoor;
+load(<span class="string">'Square_Speed_Error_Indoor_WifiLR_ALL.mat'</span>)
+error_Indoor_WifiLR_ALL = error_Indoor;
+load(<span class="string">'Square_Speed_Error_Indoor_WifiRPCA_ALL.mat'</span>)
+error_Indoor_WifiRPCA = error_Indoor;
+load(<span class="string">'Square_Speed_Error_TSLRL_RF_ALL.mat'</span>)
+</pre><h2>set figure<a name="2"></a></h2><pre class="codeinput">stepVec = 0:0.3:8;
+n = zeros(8, length(stepVec));
+
+[n(1, :), ~] = hist(error_Radar(:), stepVec);
+[n(2, :), ~] = hist(error_Horus(:), stepVec);
+[n(3, :), ~] = hist(error_Centaur(:), stepVec);
+[n(4, :), ~] = hist(error_PLWLS(:), stepVec);
+[n(5, :), ~] = hist(Error_TSLRL_RF(:), stepVec);
+[n(6, :), ~] = hist(error_Indoor_WifiLR_ALL(:), stepVec);
+[n(7, :), ~] = hist(error_Indoor_WifiRPCA(:), stepVec);
+[n(8, :), ~] = hist(error_Indoor_WifiRPCAVA(:), stepVec);
+
+
+<span class="comment">% info --setting information about the figure, containing the following fields:</span>
+<span class="comment">%       LineStyle       --line style of the curves to be plot, a string cell with size of 1*n;</span>
+<span class="comment">%       MarkerSize      --size of the markers of the data points;</span>
+<span class="comment">%       LineWidth       --width of the lines to be plot;</span>
+<span class="comment">%       MarkerFaceColor --face colors of the makers, a string cell with size of 1*n;</span>
+<span class="comment">%       LegendText      --legend text of the legends, a string cell with size of 1*n;</span>
+<span class="comment">%       row1num         --the number of legends on the first row;</span>
+<span class="comment">%       xlabel          --label of the x axis;</span>
+<span class="comment">%       ylabel          --label of the y axis;</span>
+<span class="comment">%       title           --title of the figure;</span>
+</pre><h2>call discoDrawFigure draw figure<a name="3"></a></h2><pre class="codeinput">info.plotType = 1;
+info.ytick = 0:.2:1;
+info.xtick = 0:1:9;
+info.xlabel = <span class="string">'localization error (m)'</span>;
+info.ylabel = <span class="string">'CDF'</span>;
+info.title = <span class="string">'localization error'</span>;
+info.LengendText = {<span class="string">'Radar'</span>, <span class="string">'Horus'</span>, <span class="string">'Centaur'</span>, <span class="string">'PLWLS'</span>,<span class="keyword">...</span>
+    <span class="string">'ZY TSLRLRF'</span>, <span class="string">'indoor WifiLR'</span>, <span class="string">'indoor WifiRPCA'</span>, <span class="string">'indoor WiFiRPCAVA'</span>,};
+stepY = cumsum(n, 2)/Network.T/Network.N;
+[handle]=discoDrawFigure(stepVec, stepY, info);
+
+<span class="comment">% saveas(gcf, 'E:\&#37329;&#23665;&#24555;&#30424;\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\localizationError.eps')</span>
+<span class="comment">% % print(gcf,'-dpsc2','indoortest');</span>
+</pre><img vspace="5" hspace="5" src="drawFigureIndoor_01.png" alt=""> <h2>draw figure compare different localization scheme<a name="4"></a></h2><pre class="codeinput">num = sum(n(1, :));
+errorIndoor= {error_Radar, error_Centaur,error_Horus, error_PLWLS,<span class="keyword">...</span>
+    Error_TSLRL_RF, error_Indoor_WifiLR_ALL, error_Indoor_WifiRPCA, error_Indoor_WifiRPCAVA};
+
+<span class="comment">% 50%&#35823;&#24046;</span>
+error50 = zeros(8, 1);
+error80 = zeros(8, 1);
+Mean_error = zeros(8, 1);
+<span class="keyword">for</span> i = 1:8
+    error50(i) = stepVec(find_error(n(i, :), num, 0.5));
+    error80(i) = stepVec(find_error(n(i, :), num, 0.8));
+    Mean_error(i) = mean(mean(errorIndoor{i}(:)));
+<span class="keyword">end</span>
+
+figure
+yy = [error50 Mean_error error80];
+xx = 1:3;
+h = bar(xx', yy');
+grid <span class="string">on</span>;
+
+[~, object_h, ~, text_string] = legend(<span class="string">'Radar'</span>, <span class="string">'Horus'</span>, <span class="string">'Centaur'</span>, <span class="string">'PLWLS'</span>,<span class="keyword">...</span>
+    <span class="string">'ZY TSLRLRF'</span>, <span class="string">'indoor WifiLR'</span>, <span class="string">'indoor WifiRPCA'</span>, <span class="string">'indoor WiFiRPCAVA'</span>, 1);
+hpl = findobj(object_h,<span class="string">'type'</span>,<span class="string">'patch'</span>);
+hp = findobj(h,<span class="string">'type'</span>,<span class="string">'patch'</span>);
+lineType = {<span class="string">'-'</span>, <span class="string">'--'</span>, <span class="string">':'</span>, <span class="string">'-.'</span>, <span class="string">'-'</span>, <span class="string">'--'</span>, <span class="string">':'</span>, <span class="string">'-.'</span>};
+barAngle = [45 45 45 45 135 135 135 135];
+<span class="keyword">for</span> i = 1:8
+    hatch(hpl(i),barAngle(i),<span class="string">'k'</span>,lineType{i},3,1.5);
+    hatch(hp(i),barAngle(i),<span class="string">'k'</span>,lineType{i},4,2);
+<span class="keyword">end</span>
+
+set(gca,<span class="string">'xticklabel'</span>,{<span class="string">''</span>,  <span class="string">''</span>, <span class="string">''</span>});
+axis([0.55 1.45 0 2.5])
+ylabel(<span class="string">'Localization Error(m)'</span>);
+
+set(gcf,<span class="string">'Position'</span>,[100,100,800,600]);
+</pre><img vspace="5" hspace="5" src="drawFigureIndoor_02.png" alt=""> <pre class="codeinput">figure
+yy = [error50 Mean_error error80];
+xx = 1:3;
+h = bar(xx', yy');
+grid <span class="string">on</span>;
+
+[legend_h, object_h, plot_h, text_string] = legend(<span class="string">'Radar'</span>, <span class="string">'Horus'</span>, <span class="string">'Centaur'</span>, <span class="string">'PLWLS'</span>,<span class="keyword">...</span>
+    <span class="string">'ZY TSLRLRF'</span>, <span class="string">'indoor WifiLR'</span>, <span class="string">'indoor WifiRPCA'</span>, <span class="string">'indoor WiFiRPCAVA'</span>, 1);
+hpl = findobj(object_h,<span class="string">'type'</span>,<span class="string">'patch'</span>);
+hp = findobj(h,<span class="string">'type'</span>,<span class="string">'patch'</span>);
+lineType = {<span class="string">'-'</span>, <span class="string">'--'</span>, <span class="string">':'</span>, <span class="string">'-.'</span>, <span class="string">'-'</span>, <span class="string">'--'</span>, <span class="string">':'</span>, <span class="string">'-.'</span>};
+barAngle = [45 45 45 45 135 135 135 135];
+<span class="keyword">for</span> i = 1:8
+    hatch(hpl(i),barAngle(i),<span class="string">'k'</span>,lineType{i},3,1.5);
+    hatch(hp(i),barAngle(i),<span class="string">'k'</span>,lineType{i},4,2);
+<span class="keyword">end</span>
+
+
+set(gca,<span class="string">'xticklabel'</span>,{<span class="string">''</span>,  <span class="string">''</span>, <span class="string">''</span>});
+axis([1.55 2.45 0 4])
+ylabel(<span class="string">'Localization Error(m)'</span>);
+
+set(gcf,<span class="string">'Position'</span>,[100,100,800,600]);
+</pre><img vspace="5" hspace="5" src="drawFigureIndoor_03.png" alt=""> <pre class="codeinput">figure
+yy = [error50 Mean_error error80];
+xx = 1:3;
+h = bar(xx', yy');
+grid <span class="string">on</span>;
+
+[legend_h, object_h, plot_h, text_string] = legend(<span class="string">'Radar'</span>, <span class="string">'Horus'</span>, <span class="string">'Centaur'</span>, <span class="string">'PLWLS'</span>,<span class="keyword">...</span>
+    <span class="string">'ZY TSLRLRF'</span>, <span class="string">'indoor WifiLR'</span>, <span class="string">'indoor WifiRPCA'</span>, <span class="string">'indoor WiFiRPCAVA'</span>, 1);
+hpl = findobj(object_h,<span class="string">'type'</span>,<span class="string">'patch'</span>);
+hp = findobj(h,<span class="string">'type'</span>,<span class="string">'patch'</span>);
+lineType = {<span class="string">'-'</span>, <span class="string">'--'</span>, <span class="string">':'</span>, <span class="string">'-.'</span>, <span class="string">'-'</span>, <span class="string">'--'</span>, <span class="string">':'</span>, <span class="string">'-.'</span>};
+barAngle = [45 45 45 45 135 135 135 135];
+<span class="keyword">for</span> i = 1:8
+    hatch(hpl(i),barAngle(i),<span class="string">'k'</span>,lineType{i},3,1.5);
+    hatch(hp(i),barAngle(i),<span class="string">'k'</span>,lineType{i},4,2);
+<span class="keyword">end</span>
+
+
+set(gca,<span class="string">'xticklabel'</span>,{<span class="string">''</span>,  <span class="string">''</span>, <span class="string">''</span>});
+axis([2.55 3.45 0 6])
+ylabel(<span class="string">'Localization Error(m)'</span>);
+
+set(gcf,<span class="string">'Position'</span>,[100,100,800,600]);
+<span class="comment">% set(gcf,'PaperPositionMode','auto');</span>
+<span class="comment">% saveas(gcf, 'E:\&#37329;&#23665;&#24555;&#30424;\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\compareError.eps')</span>
+<span class="comment">% print(gcf,'-dpsc2','indoortest');</span>
+</pre><img vspace="5" hspace="5" src="drawFigureIndoor_04.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+close all
+
+% %% load data
+% load('Square_Speed_Error_Radar_distError_ALL.mat')
+% load('Square_Speed_Error_PLWLS_distError_ALL.mat')
+% load('Square_Speed_Error_Horus_distError_ALL.mat')
+% load('Square_Speed_Error_Indoor_WifiRPCAVA_distError_ALL.mat')
+% load('Square_Speed_Error_Centaur_distError_ALL.mat')
+% error_Indoor_WifiRPCAVA = error_Indoor;
+% load('Square_Speed_Error_Indoor_WifiLR_distError_ALL.mat')
+% error_Indoor_WifiLR_ALL = error_Indoor;
+% load('Square_Speed_Error_Indoor_WifiRPCA_distError_ALL.mat')
+% error_Indoor_WifiRPCA = error_Indoor;
+% load('Square_Speed_Error_TSLRL_RF_ALL.mat')
+% load data
+load('Square_Speed_Error_Radar_ALL.mat')
+load('Square_Speed_Error_PLWLS_ALL.mat')
+load('Square_Speed_Error_Horus_ALL.mat')
+load('Square_Speed_Error_Indoor_WifiRPCAVA_ALL.mat')
+load('Square_Speed_Error_Centaur_ALL.mat')
+error_Indoor_WifiRPCAVA = error_Indoor;
+load('Square_Speed_Error_Indoor_WifiLR_ALL.mat')
+error_Indoor_WifiLR_ALL = error_Indoor;
+load('Square_Speed_Error_Indoor_WifiRPCA_ALL.mat')
+error_Indoor_WifiRPCA = error_Indoor;
+load('Square_Speed_Error_TSLRL_RF_ALL.mat')
+
+%% set figure
+stepVec = 0:0.3:8;
+n = zeros(8, length(stepVec));
+
+[n(1, :), ~] = hist(error_Radar(:), stepVec);
+[n(2, :), ~] = hist(error_Horus(:), stepVec);
+[n(3, :), ~] = hist(error_Centaur(:), stepVec);
+[n(4, :), ~] = hist(error_PLWLS(:), stepVec);
+[n(5, :), ~] = hist(Error_TSLRL_RF(:), stepVec);
+[n(6, :), ~] = hist(error_Indoor_WifiLR_ALL(:), stepVec);
+[n(7, :), ~] = hist(error_Indoor_WifiRPCA(:), stepVec);
+[n(8, :), ~] = hist(error_Indoor_WifiRPCAVA(:), stepVec);
+
+
+% info REPLACE_WITH_DASH_DASHsetting information about the figure, containing the following fields:
+%       LineStyle       REPLACE_WITH_DASH_DASHline style of the curves to be plot, a string cell with size of 1*n;
+%       MarkerSize      REPLACE_WITH_DASH_DASHsize of the markers of the data points;
+%       LineWidth       REPLACE_WITH_DASH_DASHwidth of the lines to be plot;
+%       MarkerFaceColor REPLACE_WITH_DASH_DASHface colors of the makers, a string cell with size of 1*n;
+%       LegendText      REPLACE_WITH_DASH_DASHlegend text of the legends, a string cell with size of 1*n;
+%       row1num         REPLACE_WITH_DASH_DASHthe number of legends on the first row;
+%       xlabel          REPLACE_WITH_DASH_DASHlabel of the x axis;
+%       ylabel          REPLACE_WITH_DASH_DASHlabel of the y axis;
+%       title           REPLACE_WITH_DASH_DASHtitle of the figure;
+%% call discoDrawFigure draw figure
+info.plotType = 1;
+info.ytick = 0:.2:1;
+info.xtick = 0:1:9;
+info.xlabel = 'localization error (m)';
+info.ylabel = 'CDF';
+info.title = 'localization error';
+info.LengendText = {'Radar', 'Horus', 'Centaur', 'PLWLS',...
+    'ZY TSLRLRF', 'indoor WifiLR', 'indoor WifiRPCA', 'indoor WiFiRPCAVA',};
+stepY = cumsum(n, 2)/Network.T/Network.N;
+[handle]=discoDrawFigure(stepVec, stepY, info);
+
+% saveas(gcf, 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\localizationError.eps')
+% % print(gcf,'-dpsc2','indoortest');
+
+%% draw figure compare different localization scheme
+num = sum(n(1, :));
+errorIndoor= {error_Radar, error_Centaur,error_Horus, error_PLWLS,...
+    Error_TSLRL_RF, error_Indoor_WifiLR_ALL, error_Indoor_WifiRPCA, error_Indoor_WifiRPCAVA};
+
+% 50%误差
+error50 = zeros(8, 1);
+error80 = zeros(8, 1);
+Mean_error = zeros(8, 1);
+for i = 1:8
+    error50(i) = stepVec(find_error(n(i, :), num, 0.5));
+    error80(i) = stepVec(find_error(n(i, :), num, 0.8));
+    Mean_error(i) = mean(mean(errorIndoor{i}(:)));
+end
+
+figure
+yy = [error50 Mean_error error80];
+xx = 1:3;
+h = bar(xx', yy');
+grid on;
+
+[~, object_h, ~, text_string] = legend('Radar', 'Horus', 'Centaur', 'PLWLS',...
+    'ZY TSLRLRF', 'indoor WifiLR', 'indoor WifiRPCA', 'indoor WiFiRPCAVA', 1);
+hpl = findobj(object_h,'type','patch');
+hp = findobj(h,'type','patch');
+lineType = {'-', 'REPLACE_WITH_DASH_DASH', ':', '-.', '-', 'REPLACE_WITH_DASH_DASH', ':', '-.'};
+barAngle = [45 45 45 45 135 135 135 135];
+for i = 1:8
+    hatch(hpl(i),barAngle(i),'k',lineType{i},3,1.5);
+    hatch(hp(i),barAngle(i),'k',lineType{i},4,2);
+end
+
+set(gca,'xticklabel',{'',  '', ''});
+axis([0.55 1.45 0 2.5])
+ylabel('Localization Error(m)');
+
+set(gcf,'Position',[100,100,800,600]);
+
+%%
+figure
+yy = [error50 Mean_error error80];
+xx = 1:3;
+h = bar(xx', yy');
+grid on;
+
+[legend_h, object_h, plot_h, text_string] = legend('Radar', 'Horus', 'Centaur', 'PLWLS',...
+    'ZY TSLRLRF', 'indoor WifiLR', 'indoor WifiRPCA', 'indoor WiFiRPCAVA', 1);
+hpl = findobj(object_h,'type','patch');
+hp = findobj(h,'type','patch');
+lineType = {'-', 'REPLACE_WITH_DASH_DASH', ':', '-.', '-', 'REPLACE_WITH_DASH_DASH', ':', '-.'};
+barAngle = [45 45 45 45 135 135 135 135];
+for i = 1:8
+    hatch(hpl(i),barAngle(i),'k',lineType{i},3,1.5);
+    hatch(hp(i),barAngle(i),'k',lineType{i},4,2);
+end
+
+
+set(gca,'xticklabel',{'',  '', ''});
+axis([1.55 2.45 0 4])
+ylabel('Localization Error(m)');
+
+set(gcf,'Position',[100,100,800,600]);
+%%
+figure
+yy = [error50 Mean_error error80];
+xx = 1:3;
+h = bar(xx', yy');
+grid on;
+
+[legend_h, object_h, plot_h, text_string] = legend('Radar', 'Horus', 'Centaur', 'PLWLS',...
+    'ZY TSLRLRF', 'indoor WifiLR', 'indoor WifiRPCA', 'indoor WiFiRPCAVA', 1);
+hpl = findobj(object_h,'type','patch');
+hp = findobj(h,'type','patch');
+lineType = {'-', 'REPLACE_WITH_DASH_DASH', ':', '-.', '-', 'REPLACE_WITH_DASH_DASH', ':', '-.'};
+barAngle = [45 45 45 45 135 135 135 135];
+for i = 1:8
+    hatch(hpl(i),barAngle(i),'k',lineType{i},3,1.5);
+    hatch(hp(i),barAngle(i),'k',lineType{i},4,2);
+end
+
+
+set(gca,'xticklabel',{'',  '', ''});
+axis([2.55 3.45 0 6])
+ylabel('Localization Error(m)');
+
+set(gcf,'Position',[100,100,800,600]);
+% set(gcf,'PaperPositionMode','auto');
+% saveas(gcf, 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\compareError.eps')
+% print(gcf,'-dpsc2','indoortest');
+
+##### SOURCE END #####
+--></body></html>

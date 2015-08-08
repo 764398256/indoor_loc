@@ -1,0 +1,11 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: Indoor || Scenario: Square_Speed_Error || Time:  2015-7-10  11:37:27 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 6.906685 秒。
+时间已过 5.887933 秒。
+时间已过 7.341294 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL || Finished at: 2015-7-10  11:38:21
+------------> Speed: 2.5 || Algorithm: TSLRL ||  Finished at: 2015-7-10  11:38:21
+ 
+>>>>>>>>>>  Finished --->  Algorithm: Indoor_WifiRPCAVA || Scenario: Square_Speed_Error || Used Time: 54.5521s || Finished at  2015-7-10  11:38:21 <<<<<<<<<<

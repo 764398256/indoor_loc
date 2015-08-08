@@ -1,0 +1,54 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-28  11:53:56 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('normcdf', 'C:\m11b\toolbox\stats\stats\normcdf.m', 90)" style="font-weight:bold">normcdf</a> (<a href="matlab: opentoline('C:\m11b\toolbox\stats\stats\normcdf.m',90,0)">line 90</a>)
+
+In <a href="matlab:helpUtils.errorDocCallback('WiFi_Horus', 'D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\WiFi_Horus.m', 23)" style="font-weight:bold">WiFi_Horus</a> (<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\WiFi_Horus.m',23,0)">line 23</a>)
+                prob(i, j) = prob(i, j) *
+                (normcdf(rss_testT(i, k) + 0.5, ...
+
+In <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\ZY\ZY_SRWSpeed.m', 96)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\ZY\ZY_SRWSpeed.m',96,0)">line 96</a>)
+        PIni = WiFi_Horus(Network)
+
+In <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_ErrorCalculate.m', 38)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_ErrorCalculate.m',38,0)">line 38</a>)
+        [Error_TSLRL_RF ,MError_TSLRL_RF ,OError_TSLRL_RF]
+        = ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL-RF
+
+In <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_Song', 'D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_Control_Song.m', 71)" style="font-weight:bold">Square_Speed_Control_Song</a> (<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_Control_Song.m',71,0)">line 71</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName);
+        %run error calculating function
+
+In <a href="matlab:helpUtils.errorDocCallback('testMultiTrace', 'D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\testMultiTrace.m', 7)" style="font-weight:bold">testMultiTrace</a> (<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\testMultiTrace.m',7,0)">line 7</a>)
+    Square_Speed_Control_Song;
+} 
+indoor_test
+indoor_test
+<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\indoor_test.m',24,1)">24  </a>[n(1, :), ~] = hist(error_Radar(:), stepVec);
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+indoor_test
+<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\indoor_test.m',25,1)">25  </a>[n(2, :), ~] = hist(error_Indoor_WifiRPCAVA(:), stepVec);
+indoor_test
+{Subscripted assignment dimension mismatch.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('indoor_test', 'D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\indoor_test.m', 45)" style="font-weight:bold">indoor_test</a> (<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\indoor_test.m',45,0)">line 45</a>)
+[n(6, :), x(6, :)] = hist(error_Indoor_WifiRPCA(:), 0:0.3:8);
+} 
+indoor_test
+{Subscripted assignment dimension mismatch.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('indoor_test', 'D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\indoor_test.m', 45)" style="font-weight:bold">indoor_test</a> (<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\indoor_test.m',45,0)">line 45</a>)
+[n(6, :), x(6, :)] = hist(error_Indoor_WifiRPCA(:), 0:0.3:8);
+} 
+indoor_test
+drawFigureIndoor
+drawFigureIndoor
+<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\drawFigureIndoor.m',21,1)">21  </a>error_Indoor_WifiRPCAVA = error_Indoor;
+drawFigureIndoor
+<a href="matlab: opentoline('D:\kuaipan\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\draw-figures\WiFiRnaging\drawFigureIndoor.m',22,1)">22  </a>error_Indoor_WifiRPCAVA = error_Indoor;
+if system_dependent('IsDebugMode')==1, dbcont; end

@@ -1,0 +1,406 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:9:26 <<<<<<<<<<
+ 
+{引用了不存在的字段 'HoleNum'。
+
+出错 <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m', 9)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m',9,0)">line 9</a>)
+disp(['     Enter ZY_SRWSpeed --> Hole:',num2str(Network.HoleNum),' || Speed Step ',num2str(Network.speedStep),' || Repeat Times
+',num2str(Network.time),'.']);
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m', 35)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m',35,0)">line 35</a>)
+        [Error_TSLRL ,MError_TSLRL ,OError_TSLRL]           =ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_TSLRL', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m', 52)" style="font-weight:bold">Square_Speed_Control_TSLRL</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m',52,0)">line 52</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_TSLRL
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:10:14 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+{引用了不存在的字段 'T'。
+
+出错 <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m', 84)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m',84,0)">line 84</a>)
+    err{k}=zeros(Network.time,Network.T);
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m', 35)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m',35,0)">line 35</a>)
+        [Error_TSLRL ,MError_TSLRL ,OError_TSLRL]           =ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_TSLRL', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m', 52)" style="font-weight:bold">Square_Speed_Control_TSLRL</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m',52,0)">line 52</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Unable to delete file: E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Error_TSLRL_running_log_4.28.16.txt
+clear
+get_Square_speed_contril_sahil
+{未定义函数或变量 'rss_test'。
+
+出错 <a href="matlab:helpUtils.errorDocCallback('get_Square_speed_contril_sahil', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\traces\get_Square_speed_contril_sahil.m', 3)" style="font-weight:bold">get_Square_speed_contril_sahil</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\traces\get_Square_speed_contril_sahil.m',3,0)">line 3</a>)
+Network.rssTest  = rss_test;
+} 
+load('PLWLS.mat')
+get_Square_speed_contril_sahil
+save('Square_Speed_Contril_sahil');
+Square_Speed_Control_TSLRL
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:12:34 <<<<<<<<<<
+ 
+{引用了不存在的字段 'HoleNum'。
+
+出错 <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m', 9)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m',9,0)">line 9</a>)
+disp(['     Enter ZY_SRWSpeed --> Hole:',num2str(Network.HoleNum),' || Speed Step ',num2str(Network.speedStep),' || Repeat Times
+',num2str(Network.time),'.']);
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m', 35)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m',35,0)">line 35</a>)
+        [Error_TSLRL ,MError_TSLRL ,OError_TSLRL]           =ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_TSLRL', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m', 52)" style="font-weight:bold">Square_Speed_Control_TSLRL</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m',52,0)">line 52</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_TSLRL
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:12:59 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+{引用了不存在的字段 'SnapShots'。
+
+出错 <a href="matlab:helpUtils.errorDocCallback('DISCO_Initialization', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\DISCO_Initialization.m', 14)" style="font-weight:bold">DISCO_Initialization</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\DISCO_Initialization.m',14,0)">line 14</a>)
+    Network.runTime = Network.SnapShots;
+
+出错 <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m', 87)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m',87,0)">line 87</a>)
+        DISCO_Initialization;
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m', 35)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m',35,0)">line 35</a>)
+        [Error_TSLRL ,MError_TSLRL ,OError_TSLRL]           =ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_TSLRL', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m', 52)" style="font-weight:bold">Square_Speed_Control_TSLRL</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m',52,0)">line 52</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_TSLRL
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:13:21 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+{引用了不存在的字段 'SnapShots'。
+
+出错 <a href="matlab:helpUtils.errorDocCallback('DISCO_Initialization', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\DISCO_Initialization.m', 99)" style="font-weight:bold">DISCO_Initialization</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\DISCO_Initialization.m',99,0)">line 99</a>)
+Network.dirName = strcat(Network.scenario,'_static_',num2str(Network.isStatic),...
+
+出错 <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m', 87)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m',87,0)">line 87</a>)
+        DISCO_Initialization;
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m', 35)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m',35,0)">line 35</a>)
+        [Error_TSLRL ,MError_TSLRL ,OError_TSLRL]           =ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_TSLRL', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m', 52)" style="font-weight:bold">Square_Speed_Control_TSLRL</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m',52,0)">line 52</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_TSLRL
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:13:37 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+{错误使用 <a href="matlab:helpUtils.errorDocCallback('eigs/checkInputs', 'D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m', 861)" style="font-weight:bold">eigs/checkInputs</a> (<a href="matlab: opentoline('D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m',861,0)">line 861</a>)
+特征值范围 sigma 必须是有效的双元素字符串。
+对于实数型对称 A，选项包括 'LM'、'SM'、'LA'、'SA' 或 'BE'。
+对于非对称或复数 A，选项包括 'LM'、'SM'、'LR'、'SR'、'LI' 或 'SI'。
+
+
+出错 <a href="matlab:helpUtils.errorDocCallback('eigs', 'D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m', 93)" style="font-weight:bold">eigs</a> (<a href="matlab: opentoline('D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m',93,0)">line 93</a>)
+[A,Amatrix,isrealprob,issymA,n,B,classAB,k,eigs_sigma,whch, ...
+
+出错 <a href="matlab:helpUtils.errorDocCallback('MDS', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\LocalizeLowRankSDP_3D\MDS.m', 46)" style="font-weight:bold">MDS</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\LocalizeLowRankSDP_3D\MDS.m',46,0)">line 46</a>)
+  [U,S] = eigs(B,d,'LA');
+
+出错 <a href="matlab:helpUtils.errorDocCallback('swatiCore', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\swatiCore.m', 90)" style="font-weight:bold">swatiCore</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\swatiCore.m',90,0)">line 90</a>)
+  Y3(:,:,i) = MDS(DD3(:,:,i),A(:,:,i));
+
+出错 <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m', 102)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m',102,0)">line 102</a>)
+            [temp currentToc]=swatiCore(Network);
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m', 35)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m',35,0)">line 35</a>)
+        [Error_TSLRL ,MError_TSLRL ,OError_TSLRL]           =ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_TSLRL', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m', 52)" style="font-weight:bold">Square_Speed_Control_TSLRL</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m',52,0)">line 52</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_TSLRL
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:15:56 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+{错误使用 <a href="matlab:helpUtils.errorDocCallback('eigs/checkInputs', 'D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m', 861)" style="font-weight:bold">eigs/checkInputs</a> (<a href="matlab: opentoline('D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m',861,0)">line 861</a>)
+特征值范围 sigma 必须是有效的双元素字符串。
+对于实数型对称 A，选项包括 'LM'、'SM'、'LA'、'SA' 或 'BE'。
+对于非对称或复数 A，选项包括 'LM'、'SM'、'LR'、'SR'、'LI' 或 'SI'。
+
+
+出错 <a href="matlab:helpUtils.errorDocCallback('eigs', 'D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m', 93)" style="font-weight:bold">eigs</a> (<a href="matlab: opentoline('D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m',93,0)">line 93</a>)
+[A,Amatrix,isrealprob,issymA,n,B,classAB,k,eigs_sigma,whch, ...
+
+出错 <a href="matlab:helpUtils.errorDocCallback('MDS', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\LocalizeLowRankSDP_3D\MDS.m', 46)" style="font-weight:bold">MDS</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\LocalizeLowRankSDP_3D\MDS.m',46,0)">line 46</a>)
+  [U,S] = eigs(B,d,'LA');
+
+出错 <a href="matlab:helpUtils.errorDocCallback('swatiCore', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\swatiCore.m', 90)" style="font-weight:bold">swatiCore</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\swatiCore.m',90,0)">line 90</a>)
+  Y3(:,:,i) = MDS(DD3(:,:,i),A(:,:,i));
+
+出错 <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m', 102)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m',102,0)">line 102</a>)
+            [temp currentToc]=swatiCore(Network);
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m', 35)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m',35,0)">line 35</a>)
+        [Error_TSLRL ,MError_TSLRL ,OError_TSLRL]           =ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_TSLRL', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m', 52)" style="font-weight:bold">Square_Speed_Control_TSLRL</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m',52,0)">line 52</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_TSLRL
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:16:23 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+{错误使用 <a href="matlab:helpUtils.errorDocCallback('eigs/checkInputs', 'D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m', 861)" style="font-weight:bold">eigs/checkInputs</a> (<a href="matlab: opentoline('D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m',861,0)">line 861</a>)
+特征值范围 sigma 必须是有效的双元素字符串。
+对于实数型对称 A，选项包括 'LM'、'SM'、'LA'、'SA' 或 'BE'。
+对于非对称或复数 A，选项包括 'LM'、'SM'、'LR'、'SR'、'LI' 或 'SI'。
+
+
+出错 <a href="matlab:helpUtils.errorDocCallback('eigs', 'D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m', 93)" style="font-weight:bold">eigs</a> (<a href="matlab: opentoline('D:\Program Files (x86)\matlab2014a\toolbox\matlab\sparfun\eigs.m',93,0)">line 93</a>)
+[A,Amatrix,isrealprob,issymA,n,B,classAB,k,eigs_sigma,whch, ...
+
+出错 <a href="matlab:helpUtils.errorDocCallback('MDS', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\LocalizeLowRankSDP_3D\MDS.m', 46)" style="font-weight:bold">MDS</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\LocalizeLowRankSDP_3D\MDS.m',46,0)">line 46</a>)
+  [U,S] = eigs(B,d,'LA');
+
+出错 <a href="matlab:helpUtils.errorDocCallback('swatiCore', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\swatiCore.m', 90)" style="font-weight:bold">swatiCore</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\swatiCore.m',90,0)">line 90</a>)
+  Y3(:,:,i) = MDS(DD3(:,:,i),A(:,:,i));
+
+出错 <a href="matlab:helpUtils.errorDocCallback('ZY_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m', 102)" style="font-weight:bold">ZY_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\ZY_SRWSpeed.m',102,0)">line 102</a>)
+            [temp currentToc]=swatiCore(Network);
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m', 35)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\jie-nes\Square_Speed_ErrorCalculate.m',35,0)">line 35</a>)
+        [Error_TSLRL ,MError_TSLRL ,OError_TSLRL]           =ZY_SRWSpeed(Network,X,Y,ErrorName); %TSLRL
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_TSLRL', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m', 52)" style="font-weight:bold">Square_Speed_Control_TSLRL</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\wifi_rpca_dev\ZY_cj\Square_Speed_Control_TSLRL.m',52,0)">line 52</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_TSLRL
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:19:52 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+
+ans =
+
+    10
+
+
+ans =
+
+     2
+
+
+ans =
+
+    10
+
+时间已过 3.102689 秒。
+
+ans =
+
+    10
+
+
+ans =
+
+     2
+
+
+ans =
+
+    10
+
+时间已过 2.743253 秒。
+
+ans =
+
+    10
+
+
+ans =
+
+     2
+
+
+ans =
+
+    10
+
+时间已过 2.710194 秒。
+         Repeat Time: 1 || Speed: 1 || Algorithm: TSLRL || Finished at: 2015-4-28  16:20:1
+------------> Speed: 1 || Algorithm: TSLRL ||  Finished at: 2015-4-28  16:20:1
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL || Scenario: Square_Speed_Error || Used Time: 8.9957s || Finished at  2015-4-28  16:20:1 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:21:32 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+
+ans =
+
+    10
+
+
+ans =
+
+     2
+
+
+ans =
+
+    10
+
+
+rx =
+
+    10
+
+
+ra =
+
+     0
+
+
+d =
+
+     2
+
+
+numSnapshots =
+
+    10
+
+
+cons = 
+
+    LRank: 3
+      EQx: [10x10x10 double]
+      EQa: [10x0x10 double]
+      UBx: [10x10x10 double]
+      LBx: [10x10x10 double]
+      UBa: [10x0x10 double]
+      LBa: [10x0x10 double]
+       TC: [8x10 double]
+    gamma: 0.1000
+
+时间已过 2.660865 秒。
+
+ans =
+
+    10
+
+
+ans =
+
+     2
+
+
+ans =
+
+    10
+
+
+rx =
+
+    10
+
+
+ra =
+
+     0
+
+
+d =
+
+     2
+
+
+numSnapshots =
+
+    10
+
+
+cons = 
+
+    LRank: 3
+      EQx: [10x10x10 double]
+      EQa: [10x0x10 double]
+      UBx: [10x10x10 double]
+      LBx: [10x10x10 double]
+      UBa: [10x0x10 double]
+      LBa: [10x0x10 double]
+       TC: [8x10 double]
+    gamma: 0.1000
+
+时间已过 2.669525 秒。
+
+ans =
+
+    10
+
+
+ans =
+
+     2
+
+
+ans =
+
+    10
+
+
+rx =
+
+    10
+
+
+ra =
+
+     0
+
+
+d =
+
+     2
+
+
+numSnapshots =
+
+    10
+
+
+cons = 
+
+    LRank: 3
+      EQx: [10x10x10 double]
+      EQa: [10x0x10 double]
+      UBx: [10x10x10 double]
+      LBx: [10x10x10 double]
+      UBa: [10x0x10 double]
+      LBa: [10x0x10 double]
+       TC: [8x10 double]
+    gamma: 0.1000
+
+时间已过 2.661745 秒。
+         Repeat Time: 1 || Speed: 1 || Algorithm: TSLRL || Finished at: 2015-4-28  16:21:40
+------------> Speed: 1 || Algorithm: TSLRL ||  Finished at: 2015-4-28  16:21:40
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL || Scenario: Square_Speed_Error || Used Time: 8.0751s || Finished at  2015-4-28  16:21:40 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL || Scenario: Square_Speed_Error || Time:  2015-4-28  16:45:11 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 2.689312 秒。
+时间已过 2.559034 秒。
+时间已过 2.538984 秒。
+         Repeat Time: 1 || Speed: 1 || Algorithm: TSLRL || Finished at: 2015-4-28  16:45:19
+------------> Speed: 1 || Algorithm: TSLRL ||  Finished at: 2015-4-28  16:45:19
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL || Scenario: Square_Speed_Error || Used Time: 7.8219s || Finished at  2015-4-28  16:45:19 <<<<<<<<<<

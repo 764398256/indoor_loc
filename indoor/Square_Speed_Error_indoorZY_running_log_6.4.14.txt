@@ -1,0 +1,11 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: indoorZY || Scenario: Square_Speed_Error || Time:  2015-6-4  14:8:8 <<<<<<<<<<
+{引用了不存在的字段 'pro'。
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_ErrorCalculate.m', 67)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_ErrorCalculate.m',67,0)">line 67</a>)
+         Alname = [Alname,'_', char(Network.pro)];
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_Song', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_Control_Song.m', 70)" style="font-weight:bold">Square_Speed_Control_Song</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_Control_Song.m',70,0)">line 70</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_Song

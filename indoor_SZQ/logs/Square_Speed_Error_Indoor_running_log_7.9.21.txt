@@ -1,0 +1,27 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: Indoor || Scenario: Square_Speed_Error || Time:  2015-7-9  21:28:59 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+{操作在以下过程中被用户终止 <a href="matlab:helpUtils.errorDocCallback('normcdf>localnormcdf', 'D:\Program Files (x86)\matlab2014a\toolbox\stats\stats\normcdf.m', 83)" style="font-weight:bold">normcdf>localnormcdf</a> (<a href="matlab: opentoline('D:\Program Files (x86)\matlab2014a\toolbox\stats\stats\normcdf.m',83,0)">line 83</a>)
+
+
+位置 <a href="matlab:helpUtils.errorDocCallback('normcdf', 'D:\Program Files (x86)\matlab2014a\toolbox\stats\stats\normcdf.m', 46)" style="font-weight:bold">normcdf</a> (<a href="matlab: opentoline('D:\Program Files (x86)\matlab2014a\toolbox\stats\stats\normcdf.m',46,0)">line 46</a>)
+[varargout{1:max(1,nargout)}] = localnormcdf(uflag,x,varargin{:});
+
+位置 <a href="matlab:helpUtils.errorDocCallback('WiFi_Horus', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\WiFi_Horus.m', 23)" style="font-weight:bold">WiFi_Horus</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\WiFi_Horus.m',23,0)">line 23</a>)
+                prob(i, j) = prob(i, j) * (normcdf(rss_testT(i, k) + 0.5, ...
+
+位置 <a href="matlab:helpUtils.errorDocCallback('Song_SRWSpeed', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Song_SRWSpeed.m', 99)" style="font-weight:bold">Song_SRWSpeed</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Song_SRWSpeed.m',99,0)">line 99</a>)
+        PIni = WiFi_Horus(Network);
+
+位置 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_ErrorCalculate.m', 65)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_ErrorCalculate.m',65,0)">line 65</a>)
+        [error_Indoor,MError_Indoor,OError_Indoor]                 = Song_SRWSpeed(Network,X,Y,ErrorName);%indoor
+
+位置 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_Song', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_Control_Song.m', 71)" style="font-weight:bold">Square_Speed_Control_Song</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_Control_Song.m',71,0)">line 71</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+drawFigureIndoor
+drawFigureIndoor
+drawFigureIndoor
+drawFigureIndoor
+drawFigureIndoor60

@@ -1,0 +1,70 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: Centaur || Scenario: Square_Speed_Error || Time:  2015-7-10  14:36:21 <<<<<<<<<<
+CENTAUR start. step: 1
+CENTAUR start. numT: 30, numdev 9
+time slot 1
+time slot 2
+time slot 3
+time slot 4
+time slot 5
+time slot 6
+time slot 7
+time slot 8
+time slot 9
+time slot 10
+time slot 11
+time slot 12
+time slot 13
+time slot 14
+time slot 15
+time slot 16
+time slot 17
+time slot 18
+time slot 19
+time slot 20
+time slot 21
+time slot 22
+time slot 23
+time slot 24
+time slot 25
+time slot 26
+time slot 27
+time slot 28
+time slot 29
+time slot 30
+时间已过 8.203708 秒。
+CENTAUR start. step: 2
+CENTAUR start. numT: 30, numdev 9
+time slot 1
+time slot 2
+time slot 3
+time slot 4
+time slot 5
+time slot 6
+time slot 7
+time slot 8
+time slot 9
+time slot 10
+time slot 11
+time slot 12
+time slot 13
+time slot 14
+time slot 15
+time slot 16
+time slot 17
+time slot 18
+time slot 19
+time slot 20
+time slot 21
+time slot 22
+time slot 23
+time slot 24
+time slot 25
+time slot 26
+time slot 27
+time slot 28
+time slot 29
+time slot 30
+时间已过 8.280690 秒。
+ 
+>>>>>>>>>>  Finished --->  Algorithm: Centaur || Scenario: Square_Speed_Error || Used Time: 496.2194s || Finished at  2015-7-10  14:44:37 <<<<<<<<<<

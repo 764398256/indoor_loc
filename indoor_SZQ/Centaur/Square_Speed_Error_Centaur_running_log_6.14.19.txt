@@ -1,0 +1,218 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: Centaur || Scenario: Square_Speed_Error || Time:  2015-6-14  19:46:56 <<<<<<<<<<
+CENTAUR start. numT: 30, numdev 3
+time slot 1
+time slot 2
+{索引超出矩阵维度。
+
+出错 <a href="matlab:helpUtils.errorDocCallback('centaur_loc_core', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Centaur\centaur_loc_core.m', 43)" style="font-weight:bold">centaur_loc_core</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Centaur\centaur_loc_core.m',43,0)">line 43</a>)
+            evidence{(numap+1)*numdev+sum(D(1:(i-1)*numdev + j))} = dist(i, j, l);
+
+出错 <a href="matlab:helpUtils.errorDocCallback('centaur_loc', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Centaur\centaur_loc.m', 25)" style="font-weight:bold">centaur_loc</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Centaur\centaur_loc.m',25,0)">line 25</a>)
+    [~, error_Centaur((i-1)*3+1:i*3, :) ] = centaur_loc_core( G_real((i-1)*3+1:i*3, :, :), rss_test(((i-1)*3+1:i*3),:, :),
+    dist(((i-1)*3+1:i*3), ((i-1)*3+1:i*3)), xtrain, ytrain, dist_m, para_m, para_v, k);
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_ErrorCalculate', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_ErrorCalculate.m', 73)" style="font-weight:bold">Square_Speed_ErrorCalculate</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_ErrorCalculate.m',73,0)">line 73</a>)
+        [ error_Centaur, MError_Centaur, MMError_Centaur ]         = centaur_loc( Network,X,Y,ErrorName );%Centaur
+
+出错 <a href="matlab:helpUtils.errorDocCallback('Square_Speed_Control_Song', 'E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_Control_Song.m', 71)" style="font-weight:bold">Square_Speed_Control_Song</a> (<a href="matlab: opentoline('E:\金山快盘\sharebox\717zhj@163.com\WSNs_localization\our-scheme\indoor-wifi-ranging\indoor_SZQ\Square_Speed_Control_Song.m',71,0)">line 71</a>)
+        Square_Speed_ErrorCalculate(Network,X,Y,AlsName{A},ErrorName); %run error calculating function
+} 
+Square_Speed_Control_Song
+ 
+>>>>>>>>>>  Begin --> Algorithm: Centaur || Scenario: Square_Speed_Error || Time:  2015-6-14  19:47:19 <<<<<<<<<<
+CENTAUR start. numT: 30, numdev 3
+time slot 1
+time slot 2
+time slot 3
+time slot 4
+time slot 5
+time slot 6
+time slot 7
+time slot 8
+time slot 9
+time slot 10
+time slot 11
+time slot 12
+time slot 13
+time slot 14
+time slot 15
+time slot 16
+time slot 17
+time slot 18
+time slot 19
+time slot 20
+time slot 21
+time slot 22
+time slot 23
+time slot 24
+time slot 25
+time slot 26
+time slot 27
+time slot 28
+time slot 29
+time slot 30
+时间已过 0.219274 秒。
+CENTAUR start. numT: 30, numdev 3
+time slot 1
+time slot 2
+time slot 3
+time slot 4
+time slot 5
+time slot 6
+time slot 7
+time slot 8
+time slot 9
+time slot 10
+time slot 11
+time slot 12
+time slot 13
+time slot 14
+time slot 15
+time slot 16
+time slot 17
+time slot 18
+time slot 19
+time slot 20
+time slot 21
+time slot 22
+time slot 23
+time slot 24
+time slot 25
+time slot 26
+time slot 27
+time slot 28
+time slot 29
+time slot 30
+时间已过 0.218361 秒。
+CENTAUR start. numT: 30, numdev 3
+time slot 1
+time slot 2
+time slot 3
+time slot 4
+time slot 5
+time slot 6
+time slot 7
+time slot 8
+time slot 9
+time slot 10
+time slot 11
+time slot 12
+time slot 13
+time slot 14
+time slot 15
+time slot 16
+time slot 17
+time slot 18
+time slot 19
+time slot 20
+time slot 21
+time slot 22
+time slot 23
+time slot 24
+time slot 25
+time slot 26
+time slot 27
+time slot 28
+time slot 29
+time slot 30
+时间已过 0.218644 秒。
+CENTAUR start. numT: 30, numdev 3
+time slot 1
+time slot 2
+time slot 3
+time slot 4
+time slot 5
+time slot 6
+time slot 7
+time slot 8
+time slot 9
+time slot 10
+time slot 11
+time slot 12
+time slot 13
+time slot 14
+time slot 15
+time slot 16
+time slot 17
+time slot 18
+time slot 19
+time slot 20
+time slot 21
+time slot 22
+time slot 23
+time slot 24
+time slot 25
+time slot 26
+time slot 27
+time slot 28
+time slot 29
+time slot 30
+时间已过 0.217067 秒。
+CENTAUR start. numT: 30, numdev 3
+time slot 1
+time slot 2
+time slot 3
+time slot 4
+time slot 5
+time slot 6
+time slot 7
+time slot 8
+time slot 9
+time slot 10
+time slot 11
+time slot 12
+time slot 13
+time slot 14
+time slot 15
+time slot 16
+time slot 17
+time slot 18
+time slot 19
+time slot 20
+time slot 21
+time slot 22
+time slot 23
+time slot 24
+time slot 25
+time slot 26
+time slot 27
+time slot 28
+time slot 29
+time slot 30
+时间已过 0.218908 秒。
+CENTAUR start. numT: 30, numdev 3
+time slot 1
+time slot 2
+time slot 3
+time slot 4
+time slot 5
+time slot 6
+time slot 7
+time slot 8
+time slot 9
+time slot 10
+time slot 11
+time slot 12
+time slot 13
+time slot 14
+time slot 15
+time slot 16
+time slot 17
+time slot 18
+time slot 19
+time slot 20
+time slot 21
+time slot 22
+time slot 23
+time slot 24
+time slot 25
+time slot 26
+time slot 27
+time slot 28
+time slot 29
+time slot 30
+时间已过 0.217777 秒。
+时间已过 0.218363 秒。
+ 
+>>>>>>>>>>  Finished --->  Algorithm: Centaur || Scenario: Square_Speed_Error || Used Time: 39.5245s || Finished at  2015-6-14  19:47:59 <<<<<<<<<<

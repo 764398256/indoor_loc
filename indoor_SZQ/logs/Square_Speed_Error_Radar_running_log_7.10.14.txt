@@ -1,0 +1,4 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: Radar || Scenario: Square_Speed_Error || Time:  2015-7-10  14:35:43 <<<<<<<<<<
+ 
+>>>>>>>>>>  Finished --->  Algorithm: Radar || Scenario: Square_Speed_Error || Used Time: 0.10509s || Finished at  2015-7-10  14:35:43 <<<<<<<<<<

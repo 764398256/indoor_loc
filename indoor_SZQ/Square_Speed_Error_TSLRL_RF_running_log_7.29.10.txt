@@ -1,0 +1,87 @@
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  10:12:28 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 3.637472 秒。
+时间已过 3.487735 秒。
+时间已过 3.632510 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  10:12:39
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  10:12:39
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 10.8977s || Finished at  2015-7-29  10:12:39 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  10:15:0 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 4.167535 秒。
+时间已过 3.258696 秒。
+时间已过 6.127693 秒。
+时间已过 4.195124 秒。
+时间已过 5.814624 秒。
+时间已过 4.913570 秒。
+时间已过 5.251581 秒。
+时间已过 5.566144 秒。
+时间已过 6.925991 秒。
+时间已过 5.603818 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  10:16:18
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  10:16:18
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 77.7574s || Finished at  2015-7-29  10:16:18 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  10:17:9 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 6.735524 秒。
+时间已过 6.937025 秒。
+时间已过 8.830272 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  10:17:56
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  10:17:56
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 46.8205s || Finished at  2015-7-29  10:17:56 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  10:22:0 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 6.867291 秒。
+时间已过 6.395341 秒。
+时间已过 9.061485 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  10:22:48
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  10:22:48
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 48.2354s || Finished at  2015-7-29  10:22:48 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  10:24:1 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 3.152738 秒。
+时间已过 1.515659 秒。
+时间已过 2.891864 秒。
+时间已过 2.409978 秒。
+时间已过 2.614823 秒。
+时间已过 5.225506 秒。
+时间已过 2.597731 秒。
+时间已过 2.525215 秒。
+时间已过 1.307116 秒。
+时间已过 1.784443 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  10:24:52
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  10:24:52
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 51.7499s || Finished at  2015-7-29  10:24:52 <<<<<<<<<<
+ 
+>>>>>>>>>>  Begin --> Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Time:  2015-7-29  10:27:30 <<<<<<<<<<
+ 
+     Enter ZY_SRWSpeed --> Hole:1 || Speed Step 1 || Repeat Times 1.
+时间已过 3.138628 秒。
+时间已过 2.755991 秒。
+时间已过 4.450566 秒。
+时间已过 4.226954 秒。
+时间已过 4.552575 秒。
+时间已过 4.141349 秒。
+时间已过 3.808221 秒。
+时间已过 4.634973 秒。
+时间已过 6.243007 秒。
+时间已过 5.274133 秒。
+         Repeat Time: 1 || Speed: 2.5 || Algorithm: TSLRL_RF || Finished at: 2015-7-29  10:28:37
+------------> Speed: 2.5 || Algorithm: TSLRL_RF ||  Finished at: 2015-7-29  10:28:37
+ 
+>>>>>>>>>>  Finished --->  Algorithm: TSLRL_RF || Scenario: Square_Speed_Error || Used Time: 66.8909s || Finished at  2015-7-29  10:28:37 <<<<<<<<<<
